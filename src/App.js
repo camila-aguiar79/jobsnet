@@ -134,7 +134,7 @@ const App = () => {
 export default App;
 
 const FormInput = styled.input`
-  border: 1px solid red;  
+  border: 1px solid blue;  
 ` 
 // const ErrorSpan = styled.span`
 //   color: red;
