@@ -14,12 +14,12 @@ export default Footer
 
 
 export const SFooter = styled.footer`
-    background-color: #cb997e;
+    background-color: #bcd4e6;
     padding: 5px 0;
     height: 15px;
     width: 100vw;
     border: none;
-    box-shadow: 0 0 20px 0 #b98b73;
+    box-shadow: 0 0 20px 0 #99c1de;
     text-align: center;
     font-size: 14px;
     font-weight: bold;

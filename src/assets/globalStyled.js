@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     #root {
         display: flex;
         flex-direction: column; 
-        background-color: #ddbea9;  
+        background-color: #d6e2e9;  
     }
 `
 

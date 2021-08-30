@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Main = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin-top: 80px;
 `
@@ -22,13 +22,15 @@ export const FormInput = styled.input`
 ` 
 
 export const Button = styled.button`
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 680px;
+    margin-left: 620px;
     margin-top: 40px;
     margin-bottom: 40px;
-    padding: 5px 10px;
+    padding: 10px 25px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-`
+    background-color: #99c1de; 
+    font-size: 16px;
+    font-weight: bold;
+    `
 

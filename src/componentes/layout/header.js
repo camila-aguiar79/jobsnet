@@ -14,11 +14,11 @@ export default Header
 
 
 export const SHeader = styled.header`
-    background-color: #cb997e;
+    background-color: #bcd4e6;
     padding: 15px 0;
     position: fixed;
     height: 30px;
-    width: 100vw;
+    width: 100%;
     border: none;
-    box-shadow: 0 0 20px 0 #b98b73;
+    box-shadow: 0 0 20px 0 #99c1de;
 `
