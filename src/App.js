@@ -54,6 +54,7 @@ const App = () => {
     <S.Main>
       <S.Title>JobsNET - Banco de Currículos</S.Title>
       <S.Form>
+        <h3>Dados Pessoais</h3>
         <div>
           <label htmlFor="name">Nome Completo * </label>
           <S.FormInput onChange={(e) => setForm({ ...form, name: e.target.value })} value={form.name}/>
@@ -110,6 +111,7 @@ const App = () => {
           <label htmlFor="email">E-mail </label>
           <S.FormInput onChange={(e) => setForm({ ...form, email: e.target.value })} value={form.email} />
         </div>
+        <h3>Documentos</h3>
         <div>
           <label htmlFor="id">Identidade * </label>
           <S.FormInput onChange={(e) => setForm({ ...form, id: e.target.value })} value={form.id} />
