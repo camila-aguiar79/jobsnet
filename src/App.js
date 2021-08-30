@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import * as S from './style'
+import './assets/img/contact_page.svg'
 
 
 const App = () => {
@@ -52,9 +53,9 @@ const App = () => {
 
   return (
     <S.Main>
-      <S.Title>JobsNET - Banco de Currículos</S.Title>
+      
       <S.Form>
-        <h3>Dados Pessoais</h3>
+        <S.Title>Dados Pessoais</S.Title>
         <div>
           <label htmlFor="name">Nome Completo * </label>
           <S.FormInput onChange={(e) => setForm({ ...form, name: e.target.value })} value={form.name}/>
@@ -111,7 +112,7 @@ const App = () => {
           <label htmlFor="email">E-mail </label>
           <S.FormInput onChange={(e) => setForm({ ...form, email: e.target.value })} value={form.email} />
         </div>
-        <h3>Documentos</h3>
+        <S.Title>Documentos</S.Title>
         <div>
           <label htmlFor="id">Identidade * </label>
           <S.FormInput onChange={(e) => setForm({ ...form, id: e.target.value })} value={form.id} />
@@ -120,7 +121,6 @@ const App = () => {
           <label htmlFor="cpf">CPF * </label>
           <S.FormInput onChange={(e) => setForm({ ...form, cpf: e.target.value })} value={form.cpf} />
         </div>
-        {/* <ErrorSpan isError={cpfError}>O CPF informado já está cadastrado!</ErrorSpan> */}
         <div>
           <label htmlFor="vehicle">Possui Veículo </label>
           <S.FormInput onChange={(e) => setForm({ ...form, vehicle: e.target.value })} value={form.vehicle} />
