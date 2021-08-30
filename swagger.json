@@ -1,0 +1,114 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "API JobsNET",
+      "description": "Api do projeto JobsNET - Gama Academy",
+      "version": "0.0.1"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:5000",
+        "description": "ambiente de desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/register": {
+        "post": {
+          "summary": "Cadastro de candidato",
+          "description": "Rota de cadastro de currículo, recebe: nome, cargo, data de nascimento, estado civil, gênero, endereço, bairro, cidade, cep, telefone fixo, celular, contato, email, id, cpf, veículo, habilitação.",
+          "tags": ["candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "position": {
+                      "type": "string"
+                    },
+                    "birthdate": {
+                      "type": "date"
+                    },
+                    "maritalstatus": {
+                      "type": "string"
+                    },
+                    "gender": {
+                        "type": "string"
+                    },
+                    "address": {
+                        "type": "string"
+                    },
+                    "district": {
+                        "type": "string"
+                    },
+                    "localidade": {
+                        "type": "string"
+                    },
+                    "cep": {
+                        "type": "number"
+                    },
+                    "phone1": {
+                        "type": "number"
+                    },
+                    "phone2": {
+                        "type": "number"
+                    },
+                    "mobile": {
+                        "type": "number"
+                    },
+                    "contact": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "number"
+                    },
+                    "cpf": {
+                        "type": "number"
+                    },
+                    "vehicle": {
+                        "type": "string"
+                    },
+                    "license": {
+                        "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "candidata": {
+                    "value": {
+                      "name": "Mirta Legrand",
+                      "position": "Developer",
+                      "birthdate": "09/11/2000",
+                      "maritalstatus": "single",
+                      "gender":"female",
+                      "address": "Escondido Street",
+                      "district": "Saudade",
+                      "localidade": "Terra do Nunca",
+                      "cep": "99888000",
+                      "phone1": "23444444",
+                      "phone2": "23556778",
+                      "mobile": "990124567",
+                      "contact": "997654512",
+                      "email": "mirta@teste.com",
+                      "id": "099788452",
+                      "cpf": "01234567895",
+                      "vehicle": "não",
+                      "license": "não"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
