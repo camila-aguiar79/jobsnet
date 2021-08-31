@@ -12,11 +12,25 @@ export const Form = styled.form`
     text-align: center;
 `
 
+export const Field = styled.div`
+    margin-bottom: 20px;
+`
+
 export const FormInput = styled.input`
     width: 400px;
+    padding: 10px 0;
     border: none;
     border-radius: 10px;
+    text-align: center;
 ` 
+
+export const Select = styled.select`
+    width: 400px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+`
 
 export const Button = styled.button`
     margin-top: 40px;
