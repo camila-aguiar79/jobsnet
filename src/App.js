@@ -44,7 +44,6 @@ const App = () => {
     license: ''
   })
 
-  // const [cpfError, setCpfError] = useState(false);
 
   useEffect(() => {
     console.log(form);
@@ -55,83 +54,88 @@ const App = () => {
     <S.Main>
       
       <S.Form>
-        <S.Title>Dados Pessoais</S.Title>
-        <div>
-          <label htmlFor="name">Nome Completo * </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, name: e.target.value })} value={form.name}/>
-        </div>
-        <div>
-          <label htmlFor="position">Cargo Pretendido </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, position: e.target.value })} value={form.position}/>
-        </div>
-        <div>
-          <label htmlFor="birthdate">Data de Nascimento * </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, birthdate: e.target.value })} value={form.birthdate}/>
-        </div>
-        <div>
-          <label htmlFor="maritalstatus">Estado Civil </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value={form.maritalstatus}/>
-        </div>
-        <div>
-          <label htmlFor="gender">Gênero </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, gender: e.target.value })} value={form.gender}/>
-        </div>
-        <div>
-          <label htmlFor="address">Endereço * </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, address: e.target.value })} value={form.address} />
-        </div>
-        <div>
-          <label htmlFor="district">Bairro * </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, district: e.target.value })} value={form.district} />
-        </div>
-        <div>
-          <label htmlFor="localidade">Cidade * </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, localidade: e.target.value })} value={form.localidade} />
-        </div>
-        <div>
-          <label htmlFor="cep">Cep </label>
-          <S.FormInput  onBlur={() => {fetchAddress()}} onChange={(e) => setForm({ ...form, cep: e.target.value })} value={form.cep}/>
-        </div>
-        <div>
-          <label htmlFor="phone1">Telefone Fixo 1 </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, phone1: e.target.value })} value={form.phone1}/>
-        </div>
-        <div>
-          <label htmlFor="phone2">Telefone Fixo 2 </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, phone2: e.target.value })} value={form.phone2}/>
-        </div>
-        <div>
-          <label htmlFor="mobile">Celular </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, mobile: e.target.value })} value={form.mobile}/>
-        </div>
-        <div>
-          <label htmlFor="contact">Contato </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, contact: e.target.value })} value={form.contact}/>
-        </div>
-        <div>
-          <label htmlFor="email">E-mail </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, email: e.target.value })} value={form.email} />
-        </div>
-        <S.Title>Documentos</S.Title>
-        <div>
-          <label htmlFor="id">Identidade * </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, id: e.target.value })} value={form.id} />
-        </div>     
-        <div>
-          <label htmlFor="cpf">CPF * </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, cpf: e.target.value })} value={form.cpf} />
-        </div>
-        <div>
-          <label htmlFor="vehicle">Possui Veículo </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, vehicle: e.target.value })} value={form.vehicle} />
-        </div>
-        <div>
-          <label htmlFor="license">Habilitação </label>
-          <S.FormInput onChange={(e) => setForm({ ...form, license: e.target.value })} value={form.license} />
-        </div>
+        <fieldset>
+          <S.Title>Dados Pessoais</S.Title>
+          <div>
+            <label htmlFor="name">Nome Completo * </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, name: e.target.value })} value={form.name} required/>
+          </div>
+          <div>
+            <label htmlFor="position">Cargo Pretendido </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, position: e.target.value })} value={form.position}/>
+          </div>
+          <div>
+            <label htmlFor="birthdate">Data de Nascimento * </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, birthdate: e.target.value })} value={form.birthdate} required/>
+          </div>
+          <div>
+            <label htmlFor="maritalstatus">Estado Civil </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value={form.maritalstatus}/>
+          </div>
+          <div>
+            <label htmlFor="gender">Gênero </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, gender: e.target.value })} value={form.gender}/>
+          </div>
+          <div>
+            <label htmlFor="address">Endereço * </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, address: e.target.value })} value={form.address} />
+          </div>
+          <div>
+            <label htmlFor="district">Bairro * </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, district: e.target.value })} value={form.district} />
+          </div>
+          <div>
+            <label htmlFor="localidade">Cidade * </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, localidade: e.target.value })} value={form.localidade} />
+          </div>
+          <div>
+            <label htmlFor="cep">Cep </label><br />
+            <S.FormInput  onBlur={() => {fetchAddress()}} onChange={(e) => setForm({ ...form, cep: e.target.value })} value={form.cep}/>
+          </div>
+          <div>
+            <label htmlFor="phone1">Telefone Fixo 1 </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, phone1: e.target.value })} value={form.phone1}/>
+          </div>
+          <div>
+            <label htmlFor="phone2">Telefone Fixo 2 </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, phone2: e.target.value })} value={form.phone2}/>
+          </div>
+          <div>
+            <label htmlFor="mobile">Celular </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, mobile: e.target.value })} value={form.mobile}/>
+          </div>
+          <div>
+            <label htmlFor="contact">Contato </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, contact: e.target.value })} value={form.contact}/>
+          </div>
+          <div>
+            <label htmlFor="email">E-mail </label><br />
+            <S.FormInput onChange={(e) => setForm({ ...form, email: e.target.value })} value={form.email} />
+          </div>
+        </fieldset>
       </S.Form>
-      
-      <S.Button onClick={() => createCandidate()}>Enviar!!</S.Button>
+      <S.Form>      
+          <fieldset>
+          <S.Title>Documentos</S.Title>
+            <div>
+              <label htmlFor="id">Identidade * </label><br />
+              <S.FormInput onChange={(e) => setForm({ ...form, id: e.target.value })} value={form.id} />
+            </div>     
+            <div>
+              <label htmlFor="cpf">CPF * </label><br />
+              <S.FormInput onChange={(e) => setForm({ ...form, cpf: e.target.value })} value={form.cpf} />
+            </div>
+            <div>
+              <label htmlFor="vehicle">Possui Veículo </label><br />
+              <S.FormInput onChange={(e) => setForm({ ...form, vehicle: e.target.value })} value={form.vehicle} />
+            </div>
+            <div>
+              <label htmlFor="license">Habilitação </label><br />
+              <S.FormInput onChange={(e) => setForm({ ...form, license: e.target.value })} value={form.license} />
+            </div>
+          </fieldset>
+          <S.Button onClick={() => createCandidate()}>Enviar!!</S.Button>
+      </S.Form>      
     </S.Main>        
   );
 }

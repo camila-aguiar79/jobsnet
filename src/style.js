@@ -1,13 +1,10 @@
 import styled from 'styled-components'
 
 export const Main = styled.div`
-    width: 100%;
-    height: 100vh;
-    margin-top: 80px;
+    margin-top: 100px;
 `
-export const Title = styled.h3`
-    margin-top: 20px;
-    margin-bottom: 20px;
+export const Title = styled.legend`
+    margin-bottom: 30px;
 `
 
 export const Form = styled.form`
@@ -22,7 +19,6 @@ export const FormInput = styled.input`
 ` 
 
 export const Button = styled.button`
-    margin-left: 620px;
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 10px 25px;
