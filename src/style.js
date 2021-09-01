@@ -22,6 +22,9 @@ export const FormInput = styled.input`
     border: none;
     border-radius: 10px;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
 ` 
 
 export const Select = styled.select`
@@ -30,6 +33,13 @@ export const Select = styled.select`
     border: none;
     border-radius: 10px;
     text-align: center;
+
+    option {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
 `
 
 export const Button = styled.button`

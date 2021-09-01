@@ -44,7 +44,6 @@ const App = () => {
     license: ''
   })
 
-
   useEffect(() => {
     console.log(form);
   }, [form])
@@ -71,23 +70,23 @@ const App = () => {
           <S.Field>
             <label htmlFor="maritalstatus">Estado Civil </label> <br />
             <S.Select onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value={form.maritalstatus}>
-              <option value=""></option>
-              <option value="">Solteira(o)</option>
-              <option value="">Casada(o)</option>
-              <option value="">Separada(o)</option>
-              <option value="">Divorciada(o)</option>
-              <option value="">Viúva(o)</option>
+              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value=""></option>
+              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="solteira">Solteira(o)</option>
+              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="casada">Casada(o)</option>
+              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="separada">Separada(o)</option>
+              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="divorciada">Divorciada(o)</option>
+              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="viuva">Viúva(o)</option>
             </S.Select>
           </S.Field>
           <S.Field>
             <label htmlFor="gender">Gênero </label><br />
             <S.Select onChange={(e) => setForm({ ...form, gender: e.target.value })} value={form.gender}>
-              <option value=""></option>
-              <option value="">Cis-Feminino</option>
-              <option value="">Cis-Masculino</option>
-              <option value="">Trans-Feminino</option>
-              <option value="">Trans-Masculino</option>
-              <option value="">Não-Binário</option>
+              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value=""></option>
+              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="femcis">Feminino Cis</option>
+              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="mascis">Masculino Cis</option>
+              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="femtrans">Feminino Trans</option>
+              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="mastrans">Masculino Trans</option>
+              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="naobinario">Não-Binário</option>
             </S.Select>
           </S.Field>
           <S.Field>
@@ -142,17 +141,17 @@ const App = () => {
             <S.Field>
               <label htmlFor="vehicle">Possui Veículo </label><br />
               <S.Select onChange={(e) => setForm({ ...form, vehicle: e.target.value })} value={form.vehicle}>
-                <option value=""></option>
-                <option value="">Sim</option>
-                <option value="">Não</option>
+                <option onChange={(e) => setForm({ ...form, vehicle: e.target.value })} value=""></option>
+                <option onChange={(e) => setForm({ ...form, vehicle: e.target.value })} value="sim">Sim</option>
+                <option onChange={(e) => setForm({ ...form, vehicle: e.target.value })} value="nao">Não</option>
               </S.Select>
             </S.Field>
             <S.Field>
               <label htmlFor="license">Habilitação </label><br />
               <S.Select onChange={(e) => setForm({ ...form, license: e.target.value })} value={form.license}>
-                <option value=""></option>
-                <option value="">Sim</option>
-                <option value="">Não</option>
+                <option onChange={(e) => setForm({ ...form, license: e.target.value })} value=""></option>
+                <option onChange={(e) => setForm({ ...form, license: e.target.value })} value="sim">Sim</option>
+                <option onChange={(e) => setForm({ ...form, license: e.target.value })} value="nao">Não</option>
               </S.Select>  
             </S.Field>
           </fieldset>
