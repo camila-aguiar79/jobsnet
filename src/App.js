@@ -53,22 +53,22 @@ const App = () => {
     <S.Main>
       
       <S.Form>
-        <fieldset>
+        <S.Fieldset>
           <S.Title>Dados Pessoais</S.Title>
           <S.Field>
-            <label htmlFor="name">Nome Completo * </label><br />
+            <S.Label htmlFor="name">Nome Completo * </S.Label><br />
             <S.FormInput onChange={(e) => setForm({ ...form, name: e.target.value })} value={form.name} required/>
           </S.Field>
           <S.Field>
-            <label htmlFor="position">Cargo Pretendido </label><br />
+            <S.Label htmlFor="position">Cargo Pretendido </S.Label><br />
             <S.FormInput onChange={(e) => setForm({ ...form, position: e.target.value })} value={form.position}/>
           </S.Field>
           <S.Field>
-            <label htmlFor="birthdate">Data de Nascimento * </label><br />
+            <S.Label htmlFor="birthdate">Data de Nascimento * </S.Label><br />
             <S.FormInput type="date" onChange={(e) => setForm({ ...form, birthdate: e.target.value })} value={form.birthdate} required/>
           </S.Field>
           <S.Field>
-            <label htmlFor="maritalstatus">Estado Civil </label> <br />
+            <S.Label htmlFor="maritalstatus">Estado Civil </S.Label> <br />
             <S.Select onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value={form.maritalstatus}>
               <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value=""></option>
               <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="solteira(o)">Solteira(o)</option>
@@ -79,7 +79,7 @@ const App = () => {
             </S.Select>
           </S.Field>
           <S.Field>
-            <label htmlFor="gender">Gênero </label><br />
+            <S.Label htmlFor="gender">Gênero </S.Label><br />
             <S.Select onChange={(e) => setForm({ ...form, gender: e.target.value })} value={form.gender}>
               <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value=""></option>
               <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="feminino-cis">Feminino Cis</option>
@@ -90,56 +90,56 @@ const App = () => {
             </S.Select>
           </S.Field>
           <S.Field>
-            <label htmlFor="address">Endereço * </label><br />
-            <S.FormInput onChange={(e) => setForm({ ...form, address: e.target.value })} value={form.address} />
+            <S.Label htmlFor="address">Endereço * </S.Label><br />
+            <S.FormInput placeholder="ex: Nome da Rua, 10 / Apt 301" onChange={(e) => setForm({ ...form, address: e.target.value })} value={form.address} />
           </S.Field>
           <S.Field>
-            <label htmlFor="district">Bairro * </label><br />
+            <S.Label htmlFor="district">Bairro * </S.Label><br />
             <S.FormInput onChange={(e) => setForm({ ...form, district: e.target.value })} value={form.district} />
           </S.Field>
           <S.Field>
-            <label htmlFor="localidade">Cidade * </label><br />
+            <S.Label htmlFor="localidade">Cidade * </S.Label><br />
             <S.FormInput onChange={(e) => setForm({ ...form, localidade: e.target.value })} value={form.localidade} />
           </S.Field>
           <S.Field>
-            <label htmlFor="cep">Cep </label><br />
+            <S.Label htmlFor="cep">Cep </S.Label><br />
             <S.FormInput  onBlur={() => {fetchAddress()}} onChange={(e) => setForm({ ...form, cep: e.target.value })} value={form.cep}/>
           </S.Field>
           <S.Field>
-            <label htmlFor="phone1">Telefone Fixo 1 </label><br />
+            <S.Label htmlFor="phone1">Telefone Fixo 1 </S.Label><br />
             <S.FormInput onChange={(e) => setForm({ ...form, phone1: e.target.value })} value={form.phone1}/>
           </S.Field>
           <S.Field>
-            <label htmlFor="phone2">Telefone Fixo 2 </label><br />
+            <S.Label htmlFor="phone2">Telefone Fixo 2 </S.Label><br />
             <S.FormInput onChange={(e) => setForm({ ...form, phone2: e.target.value })} value={form.phone2}/>
           </S.Field>
           <S.Field>
-            <label htmlFor="mobile">Celular </label><br />
+            <S.Label htmlFor="mobile">Celular </S.Label><br />
             <S.FormInput onChange={(e) => setForm({ ...form, mobile: e.target.value })} value={form.mobile}/>
           </S.Field>
           <S.Field>
-            <label htmlFor="contact">Contato </label><br />
+            <S.Label htmlFor="contact">Contato </S.Label><br />
             <S.FormInput onChange={(e) => setForm({ ...form, contact: e.target.value })} value={form.contact}/>
           </S.Field>
           <S.Field>
-            <label htmlFor="email">E-mail </label><br />
-            <S.FormInput type="email" onChange={(e) => setForm({ ...form, email: e.target.value })} value={form.email} />
+            <S.Label htmlFor="email">E-mail </S.Label><br />
+            <S.FormInput type="email" placeholder="ex: nome@email.com" onChange={(e) => setForm({ ...form, email: e.target.value })} value={form.email} />
           </S.Field>
-        </fieldset>
+        </S.Fieldset>
       </S.Form>
       <S.Form>      
-          <fieldset>
+          <S.Fieldset>
           <S.Title>Documentos</S.Title>
             <S.Field>
-              <label htmlFor="id">Identidade * </label><br />
+              <S.Label htmlFor="id">Identidade * </S.Label><br />
               <S.FormInput onChange={(e) => setForm({ ...form, id: e.target.value })} value={form.id} />
             </S.Field>     
             <S.Field>
-              <label htmlFor="cpf">CPF * </label><br />
+              <S.Label htmlFor="cpf">CPF * </S.Label><br />
               <S.FormInput onChange={(e) => setForm({ ...form, cpf: e.target.value })} value={form.cpf} />
             </S.Field>
             <S.Field>
-              <label htmlFor="vehicle">Possui Veículo </label><br />
+              <S.Label htmlFor="vehicle">Possui Veículo </S.Label><br />
               <S.Select onChange={(e) => setForm({ ...form, vehicle: e.target.value })} value={form.vehicle}>
                 <option onChange={(e) => setForm({ ...form, vehicle: e.target.value })} value=""></option>
                 <option onChange={(e) => setForm({ ...form, vehicle: e.target.value })} value="sim">Sim</option>
@@ -147,14 +147,14 @@ const App = () => {
               </S.Select>
             </S.Field>
             <S.Field>
-              <label htmlFor="license">Habilitação </label><br />
+              <S.Label htmlFor="license">Habilitação </S.Label><br />
               <S.Select onChange={(e) => setForm({ ...form, license: e.target.value })} value={form.license}>
                 <option onChange={(e) => setForm({ ...form, license: e.target.value })} value=""></option>
                 <option onChange={(e) => setForm({ ...form, license: e.target.value })} value="sim">Sim</option>
                 <option onChange={(e) => setForm({ ...form, license: e.target.value })} value="nao">Não</option>
               </S.Select>  
             </S.Field>
-          </fieldset>
+          </S.Fieldset>
           <S.Button onClick={() => createCandidate()}>Enviar!!</S.Button>
       </S.Form>      
     </S.Main>        

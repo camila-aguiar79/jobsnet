@@ -1,19 +1,29 @@
 import styled from 'styled-components'
 
 export const Main = styled.div`
-    margin-top: 100px;
+    margin-top: 60px;
 `
 export const Title = styled.legend`
+    font-size: 22px;
+    font-weight: 600;
     margin-bottom: 30px;
 `
 
 export const Form = styled.form`
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 `
 
+export const Fieldset = styled.fieldset`
+    margin-top: 60px;
+`
+
 export const Field = styled.div`
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+`
+
+export const Label = styled.label`
+    line-height: 25px;
+    font-weight: 600;
 `
 
 export const FormInput = styled.input`
@@ -22,9 +32,8 @@ export const FormInput = styled.input`
     border: none;
     border-radius: 10px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
 ` 
 
 export const Select = styled.select`
@@ -35,7 +44,6 @@ export const Select = styled.select`
     text-align: center;
 
     option {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 14px;
         font-weight: bold;
     }
@@ -52,5 +60,9 @@ export const Button = styled.button`
     background-color: #99c1de; 
     font-size: 16px;
     font-weight: bold;
+
+      :hover {
+        background-color: #61a5c2;
+    }
     `
 
