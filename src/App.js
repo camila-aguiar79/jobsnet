@@ -71,22 +71,22 @@ const App = () => {
             <label htmlFor="maritalstatus">Estado Civil </label> <br />
             <S.Select onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value={form.maritalstatus}>
               <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value=""></option>
-              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="solteira">Solteira(o)</option>
-              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="casada">Casada(o)</option>
-              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="separada">Separada(o)</option>
-              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="divorciada">Divorciada(o)</option>
-              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="viuva">Viúva(o)</option>
+              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="solteira(o)">Solteira(o)</option>
+              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="casada(o)">Casada(o)</option>
+              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="separada(o)">Separada(o)</option>
+              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="divorciada(o)">Divorciada(o)</option>
+              <option onChange={(e) => setForm({ ...form, maritalstatus: e.target.value })} value="viuva(o)">Viúva(o)</option>
             </S.Select>
           </S.Field>
           <S.Field>
             <label htmlFor="gender">Gênero </label><br />
             <S.Select onChange={(e) => setForm({ ...form, gender: e.target.value })} value={form.gender}>
               <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value=""></option>
-              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="femcis">Feminino Cis</option>
-              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="mascis">Masculino Cis</option>
-              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="femtrans">Feminino Trans</option>
-              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="mastrans">Masculino Trans</option>
-              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="naobinario">Não-Binário</option>
+              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="feminino-cis">Feminino Cis</option>
+              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="masculino-cis">Masculino Cis</option>
+              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="feminino-trans">Feminino Trans</option>
+              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="masculino-trans">Masculino Trans</option>
+              <option onChange={(e) => setForm({ ...form, gender: e.target.value })} value="nao-binario">Não-Binário</option>
             </S.Select>
           </S.Field>
           <S.Field>
