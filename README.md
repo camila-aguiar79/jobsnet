@@ -1,3 +1,3 @@
 # JobsNET - Banco de Currículos
 
-Gama Academy - Desafio - Bootcamp Desenvolvedor Full Stack
+Gama Academy - Desafio - Desenvolvedor Full Stack
